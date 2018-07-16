@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accenture SA HR Policy Bot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Lavius Nkateko Motileng">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link href="prettify.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="prettify.js"></script>
+	<style>
+		/* Default CSS Values */
+		a:link, a:visited {
+			color: /* browser's internal value */;
+			text-decoration: underline;
+			cursor: auto;
+		}
+
+			a:link:active, a:visited:active {
+				color: /* browser's internal value */;
+			}
+
+		.round {
+			background: #eeeeee;
+			padding: 0px 10px;
+			border-radius: 10px;
+			width: auto;
+			font-weight: 500;
+		}
+
+		.author {
+			padding: 5px 15px;
+			margin: 10px;
+			margin-top: 20px;
+		}
+
+		table {
+			border: 1px solid #dddddd;
+		}
+
+		.details td, tr {
+			border: 1px solid #dddddd;
+		}
+
+		.details {
+			margin-top: 100px;
+		}
+
+		.example {
+			padding: 5px 10px;
+			font-weight: 500;
+		}
+		.example_2 {
+			padding: 5px 10px;
+			font-weight: 500;
+			border-radius: 3px;
+		}
+		.intensify {
+			font-weight: 500;
+		}
+		a {
+		}
+	</style>
+</head>
+<body onload="prettyPrint()">
+
+	<div class="w3-container">
+		<h2>Avengers Application Service</h2>
+		<p>API Documentation</p>
+		<pre><i>Base URL: <a href="#">http://example.com</a></i></pre>
+
+		<table class="w3-table w3-striped">
+			<tr>
+				<th>Endpoind</th>
+				<th>Path</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>Conversation Id</td>
+				<td><a href="#ConversationId">api/ConversationId</a></td>
+				<td>Generate a new conversation Id for your new user. Use it to send and fetch a message to and from the bot.</td>
+			</tr>
+			<tr>
+				<td>Message Activity</td>
+				<td><a href="#Message">api/Message</a></td>
+				<td>Get a resply from the bot given an input message, the response to that message is returned.</td>
+			</tr>
+		</table>
+
+
+		<table class="w3-table w3-striped details">
+			<tr>
+				<td><h2>Sample Endpoint</h2></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<h3>Title</h3>
+				</td>
+				<td>
+					<h3>Example : Show All Users</h3>
+					<p>
+						<h4>Description</h4>
+						<li>Note: try to use verbs that match both request type (fetching vs modifying) and plurality (one vs multiple.)</li>
+						<li>Note: try to use verbs that match both request type (fetching vs modifying) and plurality (one vs multiple.)</li>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>URL</h3>
+				</td>
+				<td>
+					<h4>
+						<span class="round">/users</span> or <span class="round">/users/:id</span>  or <span class="round">/users?id=:id</span>
+					</h4>
+					<p>
+						<h4>Description</h4>
+						<li>For fixed urls: /users</li>
+						<li>For urls with parameters in them: /users/:id or /photos/:photo_id or /users?id=:id</li>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>Method</h3>
+				</td>
+				<td>
+					<br><span class="round">GET</span> | <span class="round">POST</span> | <span class="round">PUT</span> | <span class="round">DELETE</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>
+						URL Params
+					</h3>
+				</td>
+				<td>
+					<h3>
+						Required
+					</h3>
+					<span class="round example">id=[integer]</span>
+					<p>example: id=12</p>
+
+					<h3>
+						Optional
+					</h3>
+					<span class="round example">photo_id=[alphanumeric]</span>
+					<p>example: photo_id=2345kj3</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>
+						Data Params
+					</h3>
+				</td>
+				<td>
+					<h3>
+						Generic Example
+					</h3>
+					<pre class="prettyprint">
+{
+  u : {
+    email : [string],
+    name : [string],
+    current_password : [alphanumeric]
+    password : [alphanumeric],
+    password_confirmation : [alphanumeric]
+  }
+}
+					</pre>
+
+					<h3>
+						Example with Values
+					</h3>
+					<pre class="prettyprint">
+{
+  u : {
+    email : "john@smith.com",
+    name : "John",
+    current_password : "apassw0rd"
+    password : "anewpassw0rd",
+    password_confirmation : "anewpassw0rd"
+  }
+}
+					</pre>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>
+						Success Response
+					</h3>
+				</td>
+				<td>
+					<h3>
+						Example
+					</h3>
+					<p><b>Code:</b> 200 | 400 | 204 ...</p>
+					<b>Content:</b><span class="round example_2"> { id : 12 }</span>
+				</td>
+			</tr>
+		</table>
+</div>
+	<br><center><span class="round author">Author : Lavius N. Motileng</span></center><br>
+</body>
+</html>
